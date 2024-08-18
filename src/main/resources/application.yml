@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: leaderelection
+  cloud:
+    kubernetes:
+      leader:
+        enabled: ${KUBERNETES_LEADER_ELECTION:false}
+server:
+  port: 8080
